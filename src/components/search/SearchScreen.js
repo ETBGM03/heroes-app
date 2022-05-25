@@ -7,7 +7,7 @@ import HeroeCard from "../heroe/HeroeCard";
 const SearchScreen = () => {
   const navigate = useNavigate();
   const { search } = useLocation();
-  const { q = "" } = queryString.parse(search);
+  const { q = "batman" } = queryString.parse(search);
   const [searchText, handleInputChange] = useForm({
     searchHeroe: q,
   });
