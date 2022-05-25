@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import "animate.css";
 const HeroeCard = ({
   id,
   superhero,
@@ -10,13 +10,13 @@ const HeroeCard = ({
   characters,
 }) => {
   return (
-    <div className="col">
+    <div className="col animate__animated animate__fadeIn">
       <div className="card">
         <div className="row no-gutters">
           <div className="col-4">
             <img
               src={require(`../../assets/heroes/${id}.jpg`)}
-              className="card-img"
+              className="card-img "
               alt={superhero}
             />
           </div>
